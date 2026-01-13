@@ -3,6 +3,7 @@
 # PCA cohorte masculina (completo + zoom) + tablas PCA
 # ============================================================
 
+
 library(dplyr)
 library(factoextra)
 library(tibble)
