@@ -1,1 +1,17 @@
+# Datos (NO subir)
+*.xlsx
+*.xls
+*.csv
+
+# Salidas
+outputs/
+*.html
+*.pdf
+*.png
+*.jpg
+
+# R
+.Rhistory
+.RData
+.Rproj.user/
 
