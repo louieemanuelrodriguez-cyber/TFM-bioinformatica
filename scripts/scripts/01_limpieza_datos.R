@@ -32,7 +32,7 @@ controles <- bind_rows(ph1, ph2)
 
 # Vista rápida
 glimpse(controles)
-View(controles)
+
 
 controles |> 
   count(peticion_sistema) |>
@@ -50,7 +50,7 @@ controles_filtrado <- controles %>%
   dplyr::select(-n_duplicados)
 
 controles_final <- controles_filtrado
-View(controles_final)
+
 
 # 1.2 Tabla de biomarcadores
 hbio <- read_excel("Tabla HBio.xlsx") |>
@@ -96,7 +96,7 @@ datos_ml |>
 datos_ml <- datos_ml |>
   dplyr::select(-edad_num, -edad_del_paciente)
 
-View(datos_ml) 
+ 
 
 colnames(datos_ml)
 
@@ -142,7 +142,7 @@ datos_filtrados <- datos_filtrados %>%
     pcr_us = pcr_ultrasensible_suero
   )
 
-View(datos_filtrados)
+
 
 # 1.5 Eliminar casos incompletos
 datos_completos_h <- datos_filtrados %>%
@@ -173,7 +173,7 @@ datos_completos_h <- datos_completos_h %>%
     pcr_us_hdl = pcr_us / colesterol_hdl
   )
 
-View(datos_completos_h)
+
 
 # Análisis descriptivo General#
 
